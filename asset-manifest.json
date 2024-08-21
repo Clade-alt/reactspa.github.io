@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reactspa.github.io/static/css/main.f04ac3cf.css",
+    "main.js": "/reactspa.github.io/static/js/main.1d996d33.js",
+    "static/js/453.82605b1c.chunk.js": "/reactspa.github.io/static/js/453.82605b1c.chunk.js",
+    "static/media/hero-background.jpg": "/reactspa.github.io/static/media/hero-background.5aa2ac863e704f554be9.jpg",
+    "index.html": "/reactspa.github.io/index.html",
+    "main.f04ac3cf.css.map": "/reactspa.github.io/static/css/main.f04ac3cf.css.map",
+    "main.1d996d33.js.map": "/reactspa.github.io/static/js/main.1d996d33.js.map",
+    "453.82605b1c.chunk.js.map": "/reactspa.github.io/static/js/453.82605b1c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f04ac3cf.css",
+    "static/js/main.1d996d33.js"
+  ]
+}
