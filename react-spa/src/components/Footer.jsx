@@ -7,6 +7,9 @@ const Footer = () => {
     color: '#fff',
     textAlign: 'center',
     marginTop: 'auto',
+    bottom: '0',
+    position: 'absolute',
+    width: '100%',
   };
 
   return (

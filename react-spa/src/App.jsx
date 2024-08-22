@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
 
-      <Parallax pages={3} style={{ top: '0', left: '0' }}>
+      <Parallax pages={5} style={{ top: '0', left: '0' }}>
       <ParallaxLayer offset={0} speed={0.25}>
         <div class="animation_layer parallax" id="artback"></div>
       </ParallaxLayer>
@@ -56,35 +56,53 @@ function App() {
         <div class="animation_layer parallax" id="manonmountain"></div>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.35}>
-        <div class="animation_layer parallax" id="jungle5"><Header/></div>
+        <div class="animation_layer parallax" id="jungle5"></div>
       </ParallaxLayer>
     
-      <HeroSection />
-      <IntroSection />
-      <ContentSection
-        id="services"
-        title="Our Services"
-        description="We offer a range of graphic design services to help your business stand out."
-        services={services}
-      />
-      <ContentSection
-        id="portfolio"
-        title="Our Portfolio"
-        description="Explore our latest projects and see how we've helped businesses grow."
-        portfolio={portfolioProjects}
-      />
-      <ContentSection
-        id="testimonials"
-        title="Client Testimonials"
-        description="Hear from our satisfied clients who trust us with their design needs."
-        testimonials={testimonials}
-      />
-      <ContentSection
-        id="contact"
-        title="Contact Us"
-        description="Ready to get started? Contact us today to discuss your project."
-      />
-      <Footer />
+      <ParallaxLayer offset={0} speed={0.2}>
+          <Header />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.3}>
+          <HeroSection />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1} speed={0.4} factor={1}>
+          <IntroSection />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2} speed={0.5}>
+        <div style={{ height: '50vh', backgroundColor: '#fff' }}>
+          <ContentSection
+            id="services"
+            title="Our Services"
+            description="We offer a range of graphic design services to help your business stand out."
+            services={services}
+          />
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={3} speed={0.6}>
+          <ContentSection
+            id="portfolio"
+            title="Our Portfolio"
+            description="Explore our latest projects and see how we've helped businesses grow."
+            portfolio={portfolioProjects}
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4} speed={0.7}>
+          <ContentSection
+            id="testimonials"
+            title="Client Testimonials"
+            description="Hear from our satisfied clients who trust us with their design needs."
+            testimonials={testimonials}
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4} speed={0.8}>
+          <Footer />
+        </ParallaxLayer>
     </Parallax>  
     </div>
   );

@@ -1,11 +1,9 @@
 import React from 'react';
-import heroBackground from '../assets/hero-background.jpg';
 import '../animations.css'; 
 
 const HeroSection = () => {
   const heroStyle = {
     height: '100vh',
-    background: ``,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
