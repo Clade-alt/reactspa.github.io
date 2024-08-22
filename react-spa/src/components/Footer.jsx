@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer style={footerStyle}>
-      <p>&copy; 2024 My SPA Website. All rights reserved.</p>
+      <p>&copy; 2024 Drogon Design. All rights reserved.</p>
     </footer>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
-import heroBackground from '../assets/hero-background.jpg'; // Import the image
-import '../animations.css'; // Import the animations
+import heroBackground from '../assets/hero-background.jpg';
+import '../animations.css'; 
 
 const HeroSection = () => {
   const heroStyle = {
     height: '100vh',
-    background: `url(${heroBackground}) no-repeat center center/cover`,
+    background: ``,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
