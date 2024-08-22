@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header style={headerStyle}>
-      <h1>My SPA Website</h1>
+      <h1>DROGON DESIGN</h1>
       <nav>
         <a href="#home" style={navLinkStyle}>Home</a>
         <a href="#about" style={navLinkStyle}>About</a>

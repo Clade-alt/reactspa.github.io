@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <section id="home" style={heroStyle}>
-      <h1 style={fadeIn}>Welcome to My SPA</h1>
+      <h1 style={fadeIn}>WELCOME TO DROGON DESIGN</h1>
       <p style={fadeInDelay}>Your journey to a seamless experience starts here.</p>
     </section>
   );
