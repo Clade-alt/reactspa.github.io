@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import IntroSection from './components/IntroSection';
@@ -7,8 +6,14 @@ import ContentSection from './components/ContentSection';
 import Footer from './components/Footer';
 
 function App() {
+  const appStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  };
+
   return (
-    <div className="App">
+    <div className="App" style={appStyle}>
       <Header />
       <HeroSection />
       <IntroSection />
