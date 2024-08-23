@@ -22,7 +22,7 @@ const IntroSection = () => {
           text="WELCOME TO DROGON DESIGN"
           start={-400}
           end={200}
-          className="w-1/3 text-yellow-500 text-7xl md:text-5xl lg:text-8xl font-bold text-center px-10"
+          className="w-1/3 text-yellow-500 text-7xl md:text-5xl lg:text-8xl font-bold text-center px-10 "
         />
         <ParallaxDiv
           text="We are a leading UI/UX design and front-end development agency that creates stunning digital experiences."

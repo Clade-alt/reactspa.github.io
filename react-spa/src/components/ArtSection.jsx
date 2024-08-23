@@ -76,7 +76,7 @@ const ParallaxImages = () => {
             <ParallaxImg
             src={robot}
             alt="robot arm"
-            start={-100}
+            start={-500}
             end={-800}
             className="ml-24 w-5/12"
             />
