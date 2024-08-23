@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion';
+import Artbackground from "../assets/bgimg.jpg";
 
 const SECTION_HEIGHT = 1500;
 
@@ -12,7 +13,7 @@ const ArtSection = () => {
             <CenterImage/>
             <ParallaxImages/>
 
-            <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-50/0 to-zinc-950" />
+            <div className="absolute bottom-0 left-0 right-0 h-96 b" />
         </div>
     );
 };
@@ -23,11 +24,11 @@ const CenterImage = () => {
     const clip1 = useTransform(scrollY, [0, SECTION_HEIGHT], [25, 0]);
     const clip2 = useTransform(scrollY, [0, SECTION_HEIGHT], [75, 100]);
 
-    const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}% ${clip2}% ${clip1}% ${clip2}% ${clip2}% ${clip1}% ${clip2}%)`;
-    
-    const opacity = useTransform(scrollY, [SECTION_HEIGHT, SECTION_HEIGHT + 500], [1, 0]);
+    const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`; 
 
-    const backgroundSize = useTransform(scrollY, [0, SECTION_HEIGHT + 500], ["170%", "100%"]);
+    const opacity = useTransform(scrollY, [SECTION_HEIGHT, SECTION_HEIGHT + 50000], [1, 0]);
+
+    const backgroundSize = useTransform(scrollY, [0, SECTION_HEIGHT + 2000], ["170%", "60%"]);
 
     return (
         <motion.div
@@ -35,8 +36,8 @@ const CenterImage = () => {
             style={{
                 opacity,
                 backgroundSize,
-                clipPath,
-                backgroundImage:"https://unsplash.com/photos/a-close-up-of-a-spiral-U1iwzpmozrU",
+                clipPath: clipPath,
+                backgroundImage:`url(${Artbackground})`,
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
             }}
@@ -63,12 +64,6 @@ const ParallaxImg = ({
     src,
     start,
     end,
-}: {
-    className?: string;
-    alt: string;
-    src: string;
-    start: number;
-    end: number;
 }) => {
     return <motion.img src={src} alt={alt} className={className}/>;
 };

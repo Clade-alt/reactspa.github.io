@@ -11,7 +11,7 @@ const ServiceSection = () => {
 
     return (
         <section className="w-full h-screen bg-yellow-500 py-16 md:py-20 lg:py-24 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
                 <motion.div
                     ref={ref}
                     className="max-w-7xl mx-auto text-white" // Increased width

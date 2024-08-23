@@ -20,14 +20,14 @@ const ParallaxSection = () => {
     const { scrollYProgress } = useScroll({ target: ref });
 
     // Updated parallax values for a smoother animation
-    const backgroundY = useParallax(scrollYProgress, 80); // Moves slower
+    const backgroundY = useParallax(scrollYProgress, 85); // Moves slower
     const mountainsY = useParallax(scrollYProgress, 70); // Moves slower than logo
     const logoLandY = useParallax(scrollYProgress, 75); // Slightly faster than mountains
-    const jungle1Y = useParallax(scrollYProgress, 40); // Faster than logo
-    const jungle2Y = useParallax(scrollYProgress, 35); // Faster than jungle1
+    const jungle1Y = useParallax(scrollYProgress, 55); // Faster than logo
+    const jungle2Y = useParallax(scrollYProgress, 45); // Faster than jungle1
     const jungle3Y = useParallax(scrollYProgress, 30);  // Faster than jungle2
     const jungle4Y = useParallax(scrollYProgress, 20);  // No movement
-    const jungle5Y = useParallax(scrollYProgress, 10); // Slight upward movement
+    const jungle5Y = useParallax(scrollYProgress, 5); // Slight upward movement
     const manOnMountainY = useParallax(scrollYProgress, 20); // Moves slightly faster
 
     return (
