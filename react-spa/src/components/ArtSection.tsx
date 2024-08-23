@@ -10,6 +10,7 @@ const ArtSection = () => {
             style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)`}}>
             
             <CenterImage/>
+            <ParallaxImages/>
 
             <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-50/0 to-zinc-950" />
         </div>
@@ -41,6 +42,35 @@ const CenterImage = () => {
             }}
         />
     );
+};
+
+const ParallaxImages = () => {
+    return (
+        <div className="mx-auto flex max-w-5xl px-4 pt-[200px]">
+            <div className="relative z-20 size-56 bg-red-500" />
+            <div 
+            style={{
+                transform: "translateY(200px)",
+            }}
+            className="relative z-20 size-56 bg-blue-500" />
+        </div>
+    );
+};
+
+const ParallaxImg = ({
+    className,
+    alt,
+    src,
+    start,
+    end,
+}: {
+    className?: string;
+    alt: string;
+    src: string;
+    start: number;
+    end: number;
+}) => {
+    return <motion.img src={src} alt={alt} className={className}/>;
 };
 
 export default ArtSection;
