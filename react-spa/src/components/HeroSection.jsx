@@ -1,5 +1,5 @@
 import React from 'react';
-import '../animations.css'; 
+import '../animations.css';
 
 const HeroSection = () => {
   const heroStyle = {
