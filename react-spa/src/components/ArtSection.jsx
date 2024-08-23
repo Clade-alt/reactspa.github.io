@@ -4,7 +4,7 @@ import Artbackground from "../assets/bgimg.jpg";
 import skull from '../assets/skull.jpg';
 import table from '../assets/table.jpeg';
 import glass from '../assets/glass.jpg';
-import letters from '../assets/letters.jpg';
+import robot from '../assets/robot.jpg';
 
 const SECTION_HEIGHT = 1800;
 
@@ -74,8 +74,8 @@ const ParallaxImages = () => {
             className="ml-auto w-1/3"
             />
             <ParallaxImg
-            src={letters}
-            alt="letters"
+            src={robot}
+            alt="robot arm"
             start={-100}
             end={-800}
             className="ml-24 w-5/12"

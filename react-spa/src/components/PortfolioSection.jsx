@@ -45,12 +45,12 @@ const PortfolioSection = () => {
                     <PortfolioCard
                         title="Project Beta"
                         description="Web design and development for an e-commerce platform."
-                        image="/src/assets/about-us.jpg" // Replace with your image URL
+                        image="/src/assets/port1.jpg" // Replace with your image URL
                     />
                     <PortfolioCard
                         title="Project Gamma"
                         description="Logo and print design for a local restaurant."
-                        image="/src/assets/about-us.jpg" // Replace with your image URL
+                        image="/src/assets/port2.jpg" // Replace with your image URL
                     />
                 </div>
             </div>
