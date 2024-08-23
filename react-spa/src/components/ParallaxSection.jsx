@@ -31,7 +31,7 @@ const ParallaxSection = () => {
     const manOnMountainY = useParallax(scrollYProgress, 20); // Moves slightly faster
 
     return (
-        <section>
+        <section id='home'>
             <div ref={ref} className="relative inset-0 w-full h-[1280px] overflow-hidden items-center">
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"

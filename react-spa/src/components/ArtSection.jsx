@@ -1,8 +1,12 @@
-import React from "react";
-import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion';
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform, useMotionTemplate, useMotionValueEvent } from 'framer-motion';
 import Artbackground from "../assets/bgimg.jpg";
+import skull from '../assets/skull.jpg';
+import table from '../assets/table.jpeg';
+import glass from '../assets/glass.jpg';
+import letters from '../assets/letters.jpg';
 
-const SECTION_HEIGHT = 1500;
+const SECTION_HEIGHT = 1800;
 
 const ArtSection = () => {
     return (
@@ -47,13 +51,35 @@ const CenterImage = () => {
 
 const ParallaxImages = () => {
     return (
-        <div className="mx-auto flex max-w-5xl px-4 pt-[200px]">
-            <div className="relative z-20 size-56 bg-red-500" />
-            <div 
-            style={{
-                transform: "translateY(200px)",
-            }}
-            className="relative z-20 size-56 bg-blue-500" />
+        <div className="relative z-10 mx-auto max-w-5xl px-4 pt-[200px]">
+            <ParallaxImg
+            src={skull}
+            alt="skull hovering"
+            start={-200}
+            end={200}
+            className="w-1/3"
+            />
+            {<ParallaxImg
+            src={table}
+            alt="table work"
+            start={200}
+            end={-250}
+            className="mx-auto w-2/3"
+            />}
+            <ParallaxImg
+            src={glass}
+            alt="glass hover"
+            start={-200}
+            end={200}
+            className="ml-auto w-1/3"
+            />
+            <ParallaxImg
+            src={letters}
+            alt="letters"
+            start={-100}
+            end={-800}
+            className="ml-24 w-5/12"
+            />
         </div>
     );
 };
@@ -65,7 +91,27 @@ const ParallaxImg = ({
     start,
     end,
 }) => {
-    return <motion.img src={src} alt={alt} className={className}/>;
+    const ref = useRef(null);
+
+    const {scrollYProgress} = useScroll({
+        target: ref,
+        offset: [`${start}px end`, `end ${end * -1}px`],
+    });
+
+    const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+
+    const y = useTransform(scrollYProgress, [0, 1], [start, end]);
+
+    const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+
+    const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
+
+    return <motion.img 
+    style={{ opacity, transform }}
+    ref={ref}
+    src={src}
+    alt={alt}
+    className={className}/>;
 };
 
 export default ArtSection;
