@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-// PointWithIcon Component
 const PointWithIcon = ({ icon, text }) => {
     return (
         <motion.div

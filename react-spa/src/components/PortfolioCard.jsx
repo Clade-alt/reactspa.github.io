@@ -1,4 +1,3 @@
-// PortfolioCard.js
 import { motion } from "framer-motion";
 
 const PortfolioCard = ({ title, description, image }) => {

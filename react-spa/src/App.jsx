@@ -1,11 +1,12 @@
 import Header from './components/Header';
 import ParallaxSection from './components/ParallaxSection';
 import IntroSection from './components/IntroSection';
+import ArtSection from './components/ArtSection';
 import Footer from './components/Footer';
 import ServiceSection from './components/ServiceSection';
 import PortfolioSection from './components/PortfolioSection';
 import TestimonialsSection from './components/TestimonialSection';
-import { ReactLenis, useLenis } from 'lenis/react';
+import { ReactLenis} from 'lenis/react';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <ParallaxSection />
       <IntroSection />
+      <ArtSection/>
       <ServiceSection />
       <PortfolioSection />
       <TestimonialsSection />

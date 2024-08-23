@@ -1,8 +1,6 @@
-// src/components/ParallaxSection.js
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-// Import images from the assets folder
 import backgroundImage from '../assets/background.png';
 import mountainsImage from '../assets/mountains.png';
 import logoLandImage from '../assets/logo_land.png';
@@ -39,63 +37,63 @@ const ParallaxSection = () => {
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${backgroundImage})`,
-                        translateY: backgroundY, // Apply the parallax effect
+                        translateY: backgroundY, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${mountainsImage})`,
-                        translateY: mountainsY, // Apply the parallax effect
+                        translateY: mountainsY, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${logoLandImage})`,
-                        translateY: logoLandY, // Apply the parallax effect
+                        translateY: logoLandY, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${jungle1Image})`,
-                        translateY: jungle1Y, // Apply the parallax effect
+                        translateY: jungle1Y, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${jungle2Image})`,
-                        translateY: jungle2Y, // Apply the parallax effect
+                        translateY: jungle2Y, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${jungle3Image})`,
-                        translateY: jungle3Y, // Apply the parallax effect
+                        translateY: jungle3Y, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${jungle4Image})`,
-                        translateY: jungle4Y, // Apply the parallax effect
+                        translateY: jungle4Y, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${jungle5Image})`,
-                        translateY: jungle5Y, // Apply the parallax effect
+                        translateY: jungle5Y, 
                     }}
                 />
                 <motion.div
                     className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
                     style={{
                         backgroundImage: `url(${manOnMountainImage})`,
-                        translateY: manOnMountainY, // Apply the parallax effect
+                        translateY: manOnMountainY,
                     }}
                 />
             </div>
